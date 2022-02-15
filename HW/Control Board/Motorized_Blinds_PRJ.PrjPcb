@@ -209,60 +209,60 @@ Name=Variant_Rev
 Value=G
 
 [Parameter1]
-Name=Revision
-Value=-
+Name=PCB_PN
+Value=ESPCB-BP
 
 [Parameter2]
-Name=Prj_Update
-Value=-
-
-[Parameter3]
-Name=Prj_Title
-Value=ESP Control Board - Blinds
-
-[Parameter4]
-Name=Prj_Test_Engineer
-Value=N/A
-
-[Parameter5]
-Name=Prj_Test_Eng
-Value=N/A
-
-[Parameter6]
-Name=Prj_Proprietary
-Value=
-
-[Parameter7]
-Name=Prj_Office
-Value=
-
-[Parameter8]
-Name=Prj_Mfg_Engineer
-Value=N/A
-
-[Parameter9]
-Name=Prj_Mfg_Eng
-Value=N/A
-
-[Parameter10]
-Name=Prj_Layout_Eng
-Value=Benjamin Beaudoin
-
-[Parameter11]
-Name=Prj_Engineer
-Value=Benjamin Beaudoin
-
-[Parameter12]
-Name=Prj_Date
-Value=2/13/2022
-
-[Parameter13]
 Name=PCB_Rev
 Value=A
 
+[Parameter3]
+Name=Prj_Date
+Value=2/13/2022
+
+[Parameter4]
+Name=Prj_Engineer
+Value=Benjamin Beaudoin
+
+[Parameter5]
+Name=Prj_Layout_Eng
+Value=Benjamin Beaudoin
+
+[Parameter6]
+Name=Prj_Mfg_Eng
+Value=N/A
+
+[Parameter7]
+Name=Prj_Mfg_Engineer
+Value=N/A
+
+[Parameter8]
+Name=Prj_Office
+Value=
+
+[Parameter9]
+Name=Prj_Proprietary
+Value=
+
+[Parameter10]
+Name=Prj_Test_Eng
+Value=N/A
+
+[Parameter11]
+Name=Prj_Test_Engineer
+Value=N/A
+
+[Parameter12]
+Name=Prj_Title
+Value=ESP Control Board - Blinds
+
+[Parameter13]
+Name=Prj_Update
+Value=-
+
 [Parameter14]
-Name=PCB_PN
-Value=ESPCB-BP
+Name=Revision
+Value=-
 
 [Configuration1]
 Name=Sources
@@ -1227,6 +1227,60 @@ NetClassSeparateForBusSections=1
 SelectedOnly=1
 UpdateVariants=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID0=CAP-NoPol
+ComponentSymbolReference0=CAP-NoPol
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID1=CAP-Pol_MAL214699103E3
+ComponentSymbolReference1=CAP-Pol_MAL214699103E3
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID2=DRV8825_STEPPER_MOTOR_DRIVER_CARRIER
+ComponentSymbolReference2=DRV8825_STEPPER_MOTOR_DRIVER_CARRIER
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID3=JP_61300311121
+ComponentSymbolReference3=JP_61300311121
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID4=JP_J4_2.54mm
+ComponentSymbolReference4=JP_J4_2.54mm
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID5=MC7805BDTRKG
+ComponentSymbolReference5=MC7805BDTRKG
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID6=NodeMCU DevKit v1.0
+ComponentSymbolReference6=NodeMCU DevKit v1.0
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID7=PJ-036AH-SMT-TR
+ComponentSymbolReference7=PJ-036AH-SMT-TR
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=Motorized_Blinds_IntLib.IntLib
+ComponentDesignItemID8=Res
+ComponentSymbolReference8=Res
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
 FullReplace=0
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1240,6 +1294,87 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Comment
+ParameterUpdate0=1
+ParameterName1=Component Kind
+ParameterUpdate1=1
+ParameterName2=Description
+ParameterUpdate2=1
+ParameterName3=Library Reference
+ParameterUpdate3=1
+ParameterName4=Manufacturer
+ParameterUpdate4=1
+ParameterName5=MFPN
+ParameterUpdate5=1
+ParameterName6=Value
+ParameterUpdate6=1
+ParameterName7=Vmax
+ParameterUpdate7=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=C0201
+ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=C0402
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=C0603
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=C0805
+ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=C1206
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=C1210
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=CAPAE1050X1050N
+ModelUpdate6=1
+ModelType7=PCBLIB
+ModelName7=CUI_PJ-036AH-SMT-TR
+ModelUpdate7=1
+ModelType8=PCBLIB
+ModelName8=DPAK229P990X238-4N
+ModelUpdate8=1
+ModelType9=PCBLIB
+ModelName9=IC_DRV8825_STEPPER_MOTOR_DRIVER_CARRIER
+ModelUpdate9=1
+ModelType10=PCBLIB
+ModelName10=JP_61300311121
+ModelUpdate10=1
+ModelType11=PCBLIB
+ModelName11=JP_J4_2.54mm
+ModelUpdate11=1
+ModelType12=PCBLIB
+ModelName12=NodeMCU DevKit v1.0 - Inside Labels
+ModelUpdate12=1
+ModelType13=PCBLIB
+ModelName13=NodeMCU DevKit v1.0 - No Labels
+ModelUpdate13=1
+ModelType14=PCBLIB
+ModelName14=NodeMCU DevKit v1.0 - Outside Labels
+ModelUpdate14=1
+ModelType15=PCBLIB
+ModelName15=R0201
+ModelUpdate15=1
+ModelType16=PCBLIB
+ModelName16=R0402
+ModelUpdate16=1
+ModelType17=PCBLIB
+ModelName17=R0603
+ModelUpdate17=1
+ModelType18=PCBLIB
+ModelName18=R0805
+ModelUpdate18=1
+ModelType19=PCBLIB
+ModelName19=R1206
+ModelUpdate19=1
+ModelType20=PCBLIB
+ModelName20=R1210
+ModelUpdate20=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
