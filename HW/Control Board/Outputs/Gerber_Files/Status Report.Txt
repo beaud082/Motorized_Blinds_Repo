@@ -1,0 +1,10 @@
+Output: DP-1200P_A_IPC_D_356A Report
+Type  : Test Points
+From  : PCB Document [Motorized_Blinds_PCB.PcbDoc]
+   Generated File[ESPCB-BP.ipc]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 12:42:06 AM On 2/14/2022
