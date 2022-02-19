@@ -15,13 +15,13 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=PRJ000067_v0.4_ar_Pro.OutJob
+Name=Motorized_Blinds_OUT.OutJob
 Description=
-TargetOutputMedium=DP-1200 Pick & Place
+TargetOutputMedium=Gerber File Generation
 VariantName=DRL-1200-G
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=OrCADPS_17.4
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -50,7 +50,7 @@ OutputName1=DP-1200_Pick
 OutputCategory1=Assembly
 OutputDocumentPath1=
 OutputVariantName1=55002102-02
-OutputEnabled1=1
+OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=0
 OutputEnabled1_OutputMedium3=0
@@ -109,7 +109,7 @@ OutputName4=DP-1200P_A_Gerber_Files
 OutputCategory4=Fabrication
 OutputDocumentPath4=
 OutputVariantName4=
-OutputEnabled4=0
+OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=1
 OutputEnabled4_OutputMedium3=0
@@ -122,13 +122,13 @@ OutputEnabled4_OutputMedium9=0
 OutputEnabled4_OutputMedium10=0
 OutputDefault4=0
 Configuration4_Name1=OutputConfigurationParameter1
-Configuration4_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16908289~1|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=40|MinusApertureTolerance=40|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Absolute|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16777218~1,16777221~1,16842751~1,16973835~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=40|PlusApertureTolerance=40|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=C:\0_Altium_Projects\WDS\Dar Pro\PRJ000067_Waste Oil Monitoring PCB Design\HW\PCB\v0.2\PRJ000067_v0.2_Dar_Pro.PcbDoc
+Configuration4_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16908289~1|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=40|MinusApertureTolerance=40|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Absolute|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16908289~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=40|PlusApertureTolerance=40|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
 OutputType5=NC Drill
 OutputName5=DP-1200P_A_NC_Drill_Files
 OutputCategory5=Fabrication
 OutputDocumentPath5=
 OutputVariantName5=
-OutputEnabled5=0
+OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=2
 OutputEnabled5_OutputMedium3=0
@@ -147,7 +147,7 @@ OutputName6=DP-1200P_A_IPC_D_356A Report
 OutputCategory6=Fabrication
 OutputDocumentPath6=
 OutputVariantName6=
-OutputEnabled6=0
+OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
 OutputEnabled6_OutputMedium2=3
 OutputEnabled6_OutputMedium3=0
@@ -287,7 +287,7 @@ Configuration12_Name6=VisibleOrder_Flat
 Configuration12_Item6=Quantity=120|Designator=120|Value=100|MFPN=100|Manufacturer=100|Alternative MFPN=100|Alternative Manufacturer=100|Description=120|Vmax=100|Footprint=120|LibRef=120
 
 [PublishSettings]
-OutputFilePath2=C:\Projects\Dar Pro\PRJ000067_Waste Oil Monitoring PCB Design\HW\PCB\V0.4_DRL-1200-C\.\Outputs\Gerber_Files\
+OutputFilePath2=C:\Projects\Motorized_Blinds_Repo\HW\Control Board\.\Outputs\Gerber_Files\
 ReleaseManaged2=0
 OutputBasePath2=.\
 OutputPathMedia2=Outputs\Gerber_Files
@@ -476,7 +476,7 @@ OutputFileNameSpecial10=
 OpenOutput10=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Projects\Dar Pro\PRJ000067_Waste Oil Monitoring PCB Design\HW\PCB\V0.4_DRL-1200-C\.\Outputs\Gerber_Files\
+RelativeOutputPath2=C:\Projects\Motorized_Blinds_Repo\HW\Control Board\.\Outputs\Gerber_Files\
 OpenOutputs2=1
 AddToProject2=1
 TimestampFolder2=0

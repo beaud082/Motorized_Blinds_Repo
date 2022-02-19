@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: Motorized_Blinds_PCB.PcbDoc   2/14/2022  12:42:05 AM
+NCDrill File Report For: Motorized_Blinds_PCB.PcbDoc   2/19/2022  2:55:20 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -9,12 +9,13 @@ EIA File   : ESPCB-BP.DRL
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      25mil (0.635mm)                                           Round             63        PTH        13.34inch (338.73mm)
-T2      35mil (0.889mm)                                           Round             30        PTH        3.70inch (93.98mm)
-T3      43mil (1.1mm)                                             Round             29        PTH        3.97inch (100.79mm)
-T4      79mil (1.999mm)                                           Round             1         NPTH       0.00inch (0.00mm)
-T5      126mil (3.2mm)                                            Round             2         NPTH       2.84inch (72.26mm)
+T1      25mil (0.635mm)                                           Round             27        PTH        9.07inch (230.36mm)
+T2      28mil (0.711mm)                                           Round             11        PTH        5.52inch (140.25mm)
+T3      35mil (0.889mm)                                           Round             30        PTH        3.70inch (93.98mm)
+T4      43mil (1.1mm)                                             Round             35        PTH        5.57inch (141.45mm)
+T5      79mil (1.999mm)                                           Round             1         NPTH       0.00inch (0.00mm)
+T6      126mil (3.2mm)                                            Round             2         NPTH       2.82inch (71.73mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              125
+Totals                                                                              106
 
 Total Processing Time (hh:mm:ss) : 00:00:00
