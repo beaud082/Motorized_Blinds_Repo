@@ -32,7 +32,7 @@ class Motorized_Blinds : public Component, public Cover {
   }
   void control(const CoverCall &call) override {
     // This will be called every time the user requests a state change.
-    if (call.get_tilt().has_value()) {
+    if (call.get_tilt().has_value() && stepper_motor.state() == STOPPED) {
 	  
 	  float requested_float_tilt = *call.get_tilt();
 	  
@@ -57,7 +57,7 @@ class Motorized_Blinds : public Component, public Cover {
   }
   
   void loop() override {
-	  if(micros() >= next_action_time_micros){
+	  if(micros() > next_action_time_micros){
 		unsigned interval_time_micros = stepper_motor.nextAction();
 		if(interval_time_micros == 0){
 			next_action_time_micros = 0;
@@ -72,7 +72,6 @@ class Motorized_Blinds : public Component, public Cover {
  private:
 	int current_step_tilt = 0; //between 0 and TILT_STEP_MAX
 	unsigned next_action_time_micros = 0;
-	bool is_done = true;
 	
 	BasicStepperDriver stepper_motor(STEPS_PER_REVOLUTION, STEPPER_DIR_PIN, STEPPER_STEP_PIN, STEPPER_SLEEP_PIN);
 	
