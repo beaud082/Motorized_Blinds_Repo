@@ -209,75 +209,75 @@ Name=Variant_Rev
 Value=G
 
 [GeneratedDocument1]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP-NonPlated.TXT
+DocumentPath=.\Outputs\DRL-1200-G\DRL-1200-G_PRJ000067_BOM_2022-02-19.xls
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP-Plated.TXT
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP-NonPlated.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.DRL
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP-Plated.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.DRR
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.DRL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.EXTREP
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.G1
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.G2
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.G1
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GBL
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.G2
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GBS
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GM1
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GTL
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GTO
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GTP
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.GTS
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.ipc
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.ipc
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.LDP
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.REP
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.REP
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=.\Outputs\Gerber_Files\ESPCB-BP.RUL
+DocumentPath=Outputs\Gerber_Files\ESPCB-BP.RUL
 DItemRevisionGUID=
 
 [Parameter1]
