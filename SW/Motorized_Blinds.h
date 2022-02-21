@@ -32,7 +32,7 @@ class Motorized_Blinds : public Component, public Cover {
   }
   void control(const CoverCall &call) override {
     // This will be called every time the user requests a state change.
-    if (call.get_tilt().has_value() && stepper_motor.state() == STOPPED) {
+    if (call.get_tilt().has_value()) {
 	  
 	  float requested_float_tilt = *call.get_tilt();
 	  
@@ -42,10 +42,17 @@ class Motorized_Blinds : public Component, public Cover {
       
 	  int requested_step_tilt = (int)(requested_float_tilt * TILT_STEP_MAX * MICROSTEPS_PER_STEP);
 	  
-	  if(current_step_tilt != requested_step_tilt){
-		  stepper_motor.enable();
-		  stepper_motor.startMove(requested_step_tilt - current_step_tilt);
-		  current_step_tilt = requested_step_tilt;
+	  if(current_step_tilt != requested_step_tilt){ //check whether the motor needs to move by comparing its current position to its requested position
+		  if(stepper_motor.state() == STOPPED)
+			stepper_motor.enable();
+			stepper_motor.startMove(requested_step_tilt - current_step_tilt);
+			current_step_tilt = requested_step_tilt;
+		  }
+		  else {																//this case is for if the motor is already in the middle of moving due to a previous request
+			current_step_tilt -= stepper_motor.stop(); 							//stop the motor where it is and figure out how far it went and correct the current step counter accordingly
+			stepper_motor.startMove(requested_step_tilt - current_step_tilt);	// start a new move as requested
+			current_step_tilt = requested_step_tilt;
+		  }
 	  }
 	  
     }
