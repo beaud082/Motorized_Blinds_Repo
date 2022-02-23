@@ -11,7 +11,7 @@
 #define MICROSTEPS_PER_STEP 1
 #define RPM 20
 
-class Motorized_Blinds : public Component, public Cover {
+class Motorized_Blinds : public Component, public CustomAPIDevice {
 
  public:
   void setup() override {
@@ -21,21 +21,20 @@ class Motorized_Blinds : public Component, public Cover {
 	stepper_motor.setEnableActiveState(LOW);
 	stepper_motor.enable();
 	
+	// Declare a service "calibrate_blinds"
+    //  - Service will be called "esphome.<NODE_NAME>_calibrate_blinds" in Home Assistant.
+    //  - The service has no arguments
+    //  - The function calibrate declared below will attached to the service.
+    register_service(&Motorized_Blinds::calibrate, "calibrate_blinds");
 	
   }
-  CoverTraits get_traits() override {
-    auto traits = CoverTraits();
-    traits.set_is_assumed_state(false);
-    traits.set_supports_position(false);
-    traits.set_supports_tilt(true);
-    return traits;
+  
+  void calibrate(){
+	stepper_motor.startMove(-1*TILT_STEP_MAX);
   }
-  void control(const CoverCall &call) override {
+  
+  void set_blinds_tilt(float requested_float_tilt) {
     // This will be called every time the user requests a state change.
-    if (call.get_tilt().has_value()) {
-	  
-	  float requested_float_tilt = *call.get_tilt();
-	  
 	  if(requested_float_tilt < 0 || requested_float_tilt > 1){
 		return;
 	  }
@@ -43,7 +42,7 @@ class Motorized_Blinds : public Component, public Cover {
 	  int requested_step_tilt = (int)(requested_float_tilt * TILT_STEP_MAX * MICROSTEPS_PER_STEP);
 	  
 	  if(current_step_tilt != requested_step_tilt){ //check whether the motor needs to move by comparing its current position to its requested position
-		  if(stepper_motor.state() == STOPPED)
+		  if(stepper_motor.state() == STOPPED) {
 			stepper_motor.enable();
 			stepper_motor.startMove(requested_step_tilt - current_step_tilt);
 			current_step_tilt = requested_step_tilt;
@@ -54,24 +53,23 @@ class Motorized_Blinds : public Component, public Cover {
 			current_step_tilt = requested_step_tilt;
 		  }
 	  }
-	  
-    }
-    if (call.get_stop()) {
-      // User requested cover stop
+  }
+  void stop_blinds() {
+	// User requested cover stop
 	  current_step_tilt -= stepper_motor.stop();
 	  stepper_motor.disable();
-    }
   }
   
   void loop() override {
-	  if(micros() > next_action_time_micros){
+	  unsigned time_stamp_micros = micros();
+	  if(time_stamp_micros - next_action_time_micros >= 0){
 		unsigned interval_time_micros = stepper_motor.nextAction();
 		if(interval_time_micros == 0){
 			next_action_time_micros = 0;
 			stepper_motor.disable();
 		}
 		else{
-			next_action_time_micros = micros() + interval_time_micros;
+			next_action_time_micros = time_stamp_micros + interval_time_micros;
 		}
 	  }
 
@@ -81,5 +79,6 @@ class Motorized_Blinds : public Component, public Cover {
 	unsigned next_action_time_micros = 0;
 	
 	BasicStepperDriver stepper_motor(STEPS_PER_REVOLUTION, STEPPER_DIR_PIN, STEPPER_STEP_PIN, STEPPER_SLEEP_PIN);
+	
 	
 };
