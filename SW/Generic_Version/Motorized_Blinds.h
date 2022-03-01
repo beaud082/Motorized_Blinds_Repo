@@ -7,9 +7,16 @@
 #define STEPPER_SLEEP_PIN
 #define STEPPER_STEP_PIN
 #define STEPPER_DIR_PIN
+
+#define CAL_BUTTON_PIN
+#define UP_BUTTON_PIN
+#define DOWN_BUTTON_PIN
+
 #define STEPS_PER_REVOLUTION 200
 #define MICROSTEPS_PER_STEP 1
 #define RPM 20
+
+#define DEBOUNCE_MICROS 
 
 class Motorized_Blinds : public Component, public CustomAPIDevice {
 
@@ -19,7 +26,7 @@ class Motorized_Blinds : public Component, public CustomAPIDevice {
     
 	stepper_motor.begin(RPM, STEPS_PER_REVOLUTION);
 	stepper_motor.setEnableActiveState(LOW);
-	stepper_motor.enable();
+	stepper_motor.disable();
 	
 	// Declare a service "calibrate_blinds"
     //  - Service will be called "esphome.<NODE_NAME>_calibrate_blinds" in Home Assistant.
@@ -27,13 +34,28 @@ class Motorized_Blinds : public Component, public CustomAPIDevice {
     //  - The function calibrate declared below will attached to the service.
     register_service(&Motorized_Blinds::calibrate, "calibrate_blinds");
 	
+	// Declare a service "set_blinds_tilt"
+    //  - Service will be called "esphome.<NODE_NAME>_set_blinds_tilt" in Home Assistant.
+    //  - The service has one argument (type inferred from method definition):
+    //  - tilt_value: float
+    //  - The function set_blinds_tilt declared below will attached to the service.
+    register_service(&Motorized_Blinds::set_blinds_tilt, "set_blinds_tilt", "tilt_value");
+
+	// Declare a service "stop_blinds"
+    //  - Service will be called "esphome.<NODE_NAME>_stop_blinds" in Home Assistant.
+    //  - The service has no arguments
+    //  - The function stop_blinds declared below will attached to the service.
+    register_service(&Motorized_Blinds::stop_blinds, "stop_blinds");	
   }
   
   void calibrate(){
-	stepper_motor.startMove(-1*TILT_STEP_MAX);
+	ESP_LOGD("custom", "calibrate called");
+	stepper_motor.startMove((int)(-1.05 * ((double) TILT_STEP_MAX)));
+	current_step_tilt = 0;
   }
   
   void set_blinds_tilt(float requested_float_tilt) {
+	  ESP_LOGD("custom", "set_blinds_tilt called");
     // This will be called every time the user requests a state change.
 	  if(requested_float_tilt < 0 || requested_float_tilt > 1){
 		return;
@@ -55,14 +77,21 @@ class Motorized_Blinds : public Component, public CustomAPIDevice {
 	  }
   }
   void stop_blinds() {
-	// User requested cover stop
+	  ESP_LOGD("custom", "stop_blinds called");
 	  current_step_tilt -= stepper_motor.stop();
 	  stepper_motor.disable();
   }
   
+  void home_blinds(){
+	ESP_LOGD("custom", "home_blinds called");
+	stepper_motor.startMove(TILT_STEP_HOME - current_step_tilt);
+	current_step_tilt = TILT_STEP_HOME;
+  }
+  
+  
   void loop() override {
-	  unsigned time_stamp_micros = micros();
-	  if(time_stamp_micros - next_action_time_micros >= 0){
+	unsigned time_stamp_micros = micros();
+	if(time_stamp_micros - next_action_time_micros >= 0){
 		unsigned interval_time_micros = stepper_motor.nextAction();
 		if(interval_time_micros == 0){
 			next_action_time_micros = 0;
@@ -71,13 +100,67 @@ class Motorized_Blinds : public Component, public CustomAPIDevice {
 		else{
 			next_action_time_micros = time_stamp_micros + interval_time_micros;
 		}
-	  }
+	}
+	
+	if(time_stamp_micros - next_button_time_micros >= 0){
+		next_button_time_micros = 0;
+		
+		bool current_button1_state = digitalRead(CAL_BUTTON_PIN);
+		bool current_button2_state = digitalRead(UP_BUTTON_PIN);
+		bool current_button3_state = digitalRead(DOWN_BUTTON_PIN);
+		
+		if(current_button1_state && current_button1_state != previous_button1_state)
+		{
 
+			calibrate();
+			next_button_time_micros = time_stamp_micros + DEBOUNCE_MICROS;
+		}
+		
+		if(current_button2_state && current_button2_state != previous_button2_state)
+		{
+			stepper_motor.startMove(TILT_STEP_MAX-current_step_tilt);
+			current_step_tilt = TILT_STEP_MAX;
+			next_button_time_micros = time_stamp_micros + DEBOUNCE_MICROS;
+		}
+		else if(!current_button2_state && current_button2_state != previous_button2_state)
+		{
+			stop_blinds();
+			next_button_time_micros = time_stamp_micros + DEBOUNCE_MICROS;
+		}
+		
+		if((current_button3_state && current_button3_state != previous_button3_state))
+		{
+			stepper_motor.startMove(-1*current_step_tilt);
+			current_step_tilt = 0;
+			next_button_time_micros = time_stamp_micros + DEBOUNCE_MICROS;
+		}
+		else if(!current_button3_state && current_button3_state != previous_button3_state)
+		{
+			stop_blinds();
+			next_button_time_micros = time_stamp_micros + DEBOUNCE_MICROS;
+		}
+		
+		if(current_button4_state && current_button4_state != previous_button4_state)
+		{
+			home_blinds();
+			next_button_time_micros = time_stamp_micros + DEBOUNCE_MICROS;
+		}
+		
+		previous_button1_state=current_button1_state;
+		previous_button2_state=current_button2_state;
+		previous_button3_state=current_button3_state;
+		previous_button4_state=current_button4_state;
+	}
+	
   }
  private:
 	int current_step_tilt = 0; //between 0 and TILT_STEP_MAX
 	unsigned next_action_time_micros = 0;
-	
+	unsigned next_button_time_micros = 0;
+	bool previous_button1_state = false;
+	bool previous_button2_state = false;
+	bool previous_button3_state = false;
+	bool previous_button4_state = false;
 	BasicStepperDriver stepper_motor(STEPS_PER_REVOLUTION, STEPPER_DIR_PIN, STEPPER_STEP_PIN, STEPPER_SLEEP_PIN);
 	
 	
