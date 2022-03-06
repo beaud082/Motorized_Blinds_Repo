@@ -4,13 +4,13 @@
 #define TILT_STEP_MAX 100 //Max-Min = total travelable stepping area (measured in full steps)
 #define TILT_STEP_HOME 50 //A value between the Max and Min that will act as the hardware programmed home location.
 
-#define STEPPER_SLEEP_PIN
-#define STEPPER_STEP_PIN
-#define STEPPER_DIR_PIN
+#define STEPPER_SLEEP_PIN 9
+#define STEPPER_STEP_PIN 5
+#define STEPPER_DIR_PIN 4
 
-#define CAL_BUTTON_PIN
-#define UP_BUTTON_PIN
-#define DOWN_BUTTON_PIN
+#define CAL_BUTTON_PIN 1
+#define UP_BUTTON_PIN 3
+#define DOWN_BUTTON_PIN 15
 
 #define STEPS_PER_REVOLUTION 200
 #define MICROSTEPS_PER_STEP 1

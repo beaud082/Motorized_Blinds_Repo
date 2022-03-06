@@ -1,0 +1,35 @@
+esphome:
+  name: esp8266-test-2
+
+  libraries:
+    - Wire
+    - laurb9/StepperDriver
+  includes:
+    - motorized_blinds.h
+custom_component:
+- lambda: |-
+    auto my_custom = new Motorized_Blinds();
+    return {my_custom};
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: "9d3562ce8302d339fb0151fed1755c45"
+
+wifi:
+  ssid: "Dankytown"
+  password: "2420blazedell"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp8266-Test-2 Fallback Hotspot"
+    password: "ZmP5mW35IDr4"
+
+captive_portal:
