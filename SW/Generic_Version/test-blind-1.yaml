@@ -1,11 +1,12 @@
 esphome:
-  name: esp8266-test-2
+  name: test-blind-1
 
   libraries:
     - Wire
-    - laurb9/StepperDriver
   includes:
     - motorized_blinds.h
+    - BasicStepperDriver.h
+    - BasicStepperDriver.cpp
 custom_component:
 - lambda: |-
     auto my_custom = new Motorized_Blinds();
@@ -29,7 +30,7 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Esp8266-Test-2 Fallback Hotspot"
+    ssid: "test-blind-1 Fallback Hotspot"
     password: "ZmP5mW35IDr4"
 
 captive_portal:
