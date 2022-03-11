@@ -1,0 +1,9 @@
+DRC Rules Export File for PCB: C:\Projects\Motorized_Blinds_Repo\HW\Control Board V2\Motorized_Blinds_PCB.PcbDoc
+RuleKind=Clearance|RuleName=GND_Fill_Clearance|Scope=Board|Minimum=15.00
+RuleKind=Clearance|RuleName=Clearance_USB_DIF_PAIR_POUR_CLEARANCE|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=Allow Stringers|Scope=Board|Allowed=1
+RuleKind=Clearance|RuleName=Keepout|Scope=Board|Minimum=0.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

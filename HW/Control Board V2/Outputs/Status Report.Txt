@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 3:47:14 AM On 2/19/2022
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [DRL-1200-G] of Project [Motorized_Blinds_PRJ.PrjPcb]
+   Generated File[DRL-1200-G_PRJ000067_BOM_2022-02-19.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:47:14 AM On 2/19/2022

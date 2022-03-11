@@ -1,0 +1,135 @@
+Added Component: Designator=A1(NodeMCU DevKit v1.0 - No Labels)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = "NodeMCU DevKit v1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "NodeMCU DevKit v1.0"; VariantName = "[No Variations]"
+Added Component: Designator=A2(IC_DRV8825_STEPPER_MOTOR_DRIVER_CARRIER)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Pololu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFPN"; Value = "DRV8825 STEPPER MOTOR DRIVER CARRIER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "DRV8825"; VariantName = "[No Variations]"
+Added Component: Designator=C1(C0201)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "30V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(C0201)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "30V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAPAE1050X1050N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFPN"; Value = "MAL214699103E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(C0201)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "30V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(CAPAE1050X1050N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFPN"; Value = "MAL214699103E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(CAPAE1050X1050N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFPN"; Value = "MAL214699103E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=J2(JP_J4_2.54mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=JP1(JP_61300311121)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "61300311121"; VariantName = "[No Variations]"
+Added Component: Designator=JP2(JP_61300311121)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "61300311121"; VariantName = "[No Variations]"
+Added Component: Designator=JP3(JP_61300311121)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "61300311121"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=U1(LDL212PU50R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = "LDL212PU50R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "LDL212PU50R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Pin To Net: NetName=GND Pin=A1-9
+Added Pin To Net: NetName=GND Pin=A1-25
+Added Pin To Net: NetName=GND Pin=A1-29
+Added Pin To Net: NetName=5V Pin=A1-30
+Added Pin To Net: NetName=GND Pin=A2-9
+Added Pin To Net: NetName=GND Pin=A2-15
+Added Pin To Net: NetName=12V Pin=A2-16
+Added Pin To Net: NetName=12V Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=5V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=5V Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=5V Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=12V Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=12V Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=JP1-1
+Added Pin To Net: NetName=12V Pin=JP1-3
+Added Pin To Net: NetName=GND Pin=JP2-1
+Added Pin To Net: NetName=12V Pin=JP2-3
+Added Pin To Net: NetName=GND Pin=JP3-1
+Added Pin To Net: NetName=12V Pin=JP3-3
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-2
+Added Pin To Net: NetName=5V Pin=U1-3
+Added Pin To Net: NetName=12V Pin=U1-4
+Added Pin To Net: NetName=12V Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=DIR Pin=A1-13
+Added Pin To Net: NetName=DIR Pin=A2-8
+Added Net: Name=DIR
+Added Pin To Net: NetName=E\N\ Pin=A1-15
+Added Pin To Net: NetName=E\N\ Pin=R1-1
+Added Net: Name=E\N\
+Added Pin To Net: NetName=NetA2_1 Pin=A2-1
+Added Pin To Net: NetName=NetA2_1 Pin=R1-2
+Added Net: Name=NetA2_1
+Added Pin To Net: NetName=NetA2_2 Pin=A2-2
+Added Pin To Net: NetName=NetA2_2 Pin=JP1-2
+Added Net: Name=NetA2_2
+Added Pin To Net: NetName=NetA2_3 Pin=A2-3
+Added Pin To Net: NetName=NetA2_3 Pin=JP2-2
+Added Net: Name=NetA2_3
+Added Pin To Net: NetName=NetA2_4 Pin=A2-4
+Added Pin To Net: NetName=NetA2_4 Pin=JP3-2
+Added Net: Name=NetA2_4
+Added Pin To Net: NetName=NetA2_11 Pin=A2-11
+Added Pin To Net: NetName=NetA2_11 Pin=J2-2
+Added Net: Name=NetA2_11
+Added Pin To Net: NetName=NetA2_12 Pin=A2-12
+Added Pin To Net: NetName=NetA2_12 Pin=J2-1
+Added Net: Name=NetA2_12
+Added Pin To Net: NetName=NetA2_13 Pin=A2-13
+Added Pin To Net: NetName=NetA2_13 Pin=J2-3
+Added Net: Name=NetA2_13
+Added Pin To Net: NetName=NetA2_14 Pin=A2-14
+Added Pin To Net: NetName=NetA2_14 Pin=J2-4
+Added Net: Name=NetA2_14
+Added Pin To Net: NetName=R\S\T\ Pin=A1-19
+Added Pin To Net: NetName=R\S\T\ Pin=A2-5
+Added Net: Name=R\S\T\
+Added Pin To Net: NetName=S\L\P\ Pin=A1-20
+Added Pin To Net: NetName=S\L\P\ Pin=A2-6
+Added Net: Name=S\L\P\
+Added Pin To Net: NetName=STEP Pin=A1-14
+Added Pin To Net: NetName=STEP Pin=A2-7
+Added Net: Name=STEP
+Added Class: Name=Main_SCH
+Added Room: Name=Main_SCH

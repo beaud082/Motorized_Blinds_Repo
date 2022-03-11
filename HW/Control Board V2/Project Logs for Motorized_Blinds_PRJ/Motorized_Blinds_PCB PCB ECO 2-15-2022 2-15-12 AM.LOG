@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=5V Pin=U1-2
+Removed Pin From Net: NetName=12V Pin=U1-4
+Removed Pin From Net: NetName=12V Pin=U1-6
+Removed Pin From Net: NetName=GND Pin=U1-7
+Change Component Footprint: Designator=U1 Old Footprint=LDL212PU50R New Footprint=DPAK229P990X238-4N
+Change Component Comment : Designator=U1 Old Comment=LDL212PU50R New Comment=MC7805BDTRKG
+Change component parameters: Designator = "U1"; Footprint = "DPAK229P990X238-4N"; UniqueID = "\KYWQNOOM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFPN"; Value = "MC7805BDTRKG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "MC7805BDTRKG"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Member To Class: ClassName=Main_SCH Member=Component A1 NodeMCU DevKit v1.0
+Added Member To Class: ClassName=Main_SCH Member=Component R1 0

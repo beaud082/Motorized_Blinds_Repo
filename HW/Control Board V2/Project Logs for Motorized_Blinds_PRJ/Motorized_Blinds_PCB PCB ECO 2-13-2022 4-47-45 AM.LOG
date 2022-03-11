@@ -1,0 +1,13 @@
+Change Component Comment : Designator=C4 Old Comment=4.7uF New Comment=1uF
+Change component parameters: Designator = "C4"; Footprint = "C0201"; UniqueID = "\CXIHACUP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vmax"; Value = "30V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(C0201)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vmax"; Value = "30V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Member To Class: ClassName=Main_SCH Member=Component C3 1uF
+Added Room: Name=Main_SCH

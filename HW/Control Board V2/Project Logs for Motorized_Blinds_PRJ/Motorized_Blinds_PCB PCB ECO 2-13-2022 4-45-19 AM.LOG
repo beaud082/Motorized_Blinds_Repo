@@ -1,0 +1,10 @@
+Added Component: Designator=J1(CUI_PJ-036AH-SMT-TR)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "CUI Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFPN"; Value = "PJ-036AH-SMT-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "PJ-036AH-SMT-TR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Member To Class: ClassName=Main_SCH Member=Component J1 PJ-036AH-SMT-TR
+Added Room: Name=Main_SCH

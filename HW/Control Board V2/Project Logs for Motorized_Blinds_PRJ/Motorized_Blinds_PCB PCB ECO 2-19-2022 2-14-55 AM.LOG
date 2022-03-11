@@ -1,0 +1,63 @@
+Added Component: Designator=JP?(JP_J6_2.54mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "MFPN"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=JP?-6
+Added Pin To Net: NetName=5V Pin=R?-2
+Added Pin To Net: NetName=J_3V3 Pin=A1-1
+Added Pin To Net: NetName=J_3V3 Pin=R?-2
+Added Net: Name=J_3V3
+Added Pin To Net: NetName=NetA1_3 Pin=A1-3
+Added Pin To Net: NetName=NetA1_3 Pin=R?-2
+Added Net: Name=NetA1_3
+Added Pin To Net: NetName=NetA1_4 Pin=A1-4
+Added Pin To Net: NetName=NetA1_4 Pin=R?-2
+Added Net: Name=NetA1_4
+Added Pin To Net: NetName=NetA1_5 Pin=A1-5
+Added Pin To Net: NetName=NetA1_5 Pin=R?-2
+Added Net: Name=NetA1_5
+Added Pin To Net: NetName=NetA1_6 Pin=A1-6
+Added Pin To Net: NetName=NetA1_6 Pin=R?-2
+Added Net: Name=NetA1_6
+Added Pin To Net: NetName=NetJP?_1 Pin=JP?-1
+Added Pin To Net: NetName=NetJP?_1 Pin=R?-1
+Added Pin To Net: NetName=NetJP?_1 Pin=R?-1
+Added Net: Name=NetJP?_1
+Added Pin To Net: NetName=NetJP?_2 Pin=JP?-2
+Added Pin To Net: NetName=NetJP?_2 Pin=R?-1
+Added Net: Name=NetJP?_2
+Added Pin To Net: NetName=NetJP?_3 Pin=JP?-3
+Added Pin To Net: NetName=NetJP?_3 Pin=R?-1
+Added Net: Name=NetJP?_3
+Added Pin To Net: NetName=NetJP?_4 Pin=JP?-4
+Added Pin To Net: NetName=NetJP?_4 Pin=R?-1
+Added Net: Name=NetJP?_4
+Added Pin To Net: NetName=NetJP?_5 Pin=JP?-5
+Added Pin To Net: NetName=NetJP?_5 Pin=R?-1
+Added Net: Name=NetJP?_5
+Added Member To Class: ClassName=Main_SCH Member=Component JP? 
+Added Member To Class: ClassName=Main_SCH Member=Component R? 0
+Added Member To Class: ClassName=Main_SCH Member=Component R? 0
+Added Member To Class: ClassName=Main_SCH Member=Component R? 0
+Added Member To Class: ClassName=Main_SCH Member=Component R? 0
+Added Member To Class: ClassName=Main_SCH Member=Component R? 0
+Added Member To Class: ClassName=Main_SCH Member=Component R? 0
+Added Room: Name=Main_SCH
